@@ -17,17 +17,17 @@
 
                 <div>
                     <label for="email">Email address</label>
-                    <input id="email" name="email" required type="email" placeholder="johndoe@example.com">
+                    <input id="email" name="email" required type="email" placeholder="johndoe@example.com" minlength="8">
                 </div><span class="error" aria-live="polite"></span>
                 
                 <div>
                     <label for="country">Country</label>
-                    <input id="country" name="country" required type="text" placeholder="Mars">
+                    <input id="country" name="country" required type="text" placeholder="Mars" minlength="4">
                 </div><span class="error" aria-live="polite"></span>
 
                 <div>
                     <label for="zcode">Zip code</label>
-                    <input id="zcode" name="zcode" type="text" required pattern="/\d+/" placeholder="ABXXXX">
+                    <input id="zcode" name="zcode" type="text" required pattern="^[A-Za-z]{2}\d{4}$" placeholder="ABXXXX">
                 </div><span class="error" aria-live="polite"></span>
 
             </fieldset>
@@ -37,12 +37,12 @@
 
                 <div>
                     <label for="password">Password</label>
-                    <input id="password" name="password" type="password" required pattern="" placeholder="********">
+                    <input id="password" name="password" type="password" required pattern="(^[A-Za-z\d\W]+(?=.+[A-Z].*)(?=.+[a-z].*)(?=.+\d.*)(?!.*\s.*)[A-Za-z\d\W]{7,20}$)" placeholder="********">
                 </div><span class="error" aria-live="polite"></span>
 
                 <div>
                     <label for="rpassword">Confirm password</label>
-                    <input id="rpassword" name="rpassword" type="password" required pattern="" placeholder="********">
+                    <input id="rpassword" name="rpassword" type="password" required pattern="" minlength="8" placeholder="********">
                 </div><span class="error" aria-live="polite"></span>
 
             </fieldset>

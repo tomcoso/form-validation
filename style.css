@@ -62,9 +62,17 @@ input {
     border-radius: 5px;
     border: 1px solid #000;
 }
+
 input:focus {
     outline: 1px solid #000;
+    border: 1px solid #000;
 
+}
+input:valid {
+    border: 1px solid green;
+}
+input:valid:focus {
+    outline: 1px solid green;
 }
 input:not(:placeholder-shown):not(:focus):invalid {
     border: 1px solid red;
