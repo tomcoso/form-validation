@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+#form-wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border: 2px solid #000;
+    height: min-content;
+    padding: 20px;
+    margin: 30px;
+}
+form > #submit-btn {
+    width: min-content;
+    padding: 5px 10px;
+}
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+form > fieldset > legend {
+    font-weight: bold;
+}
+form > fieldset > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

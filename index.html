@@ -9,6 +9,43 @@
     <title>Form validation</title>
 </head>
 <body>
+
+    <div id="form-wrap">
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <input id="country" name="country" type="text">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="zcode">Zip code</label>
+                    <input id="zcode" name="zcode" type="text" pattern="/\d+/">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Authentication</legend>
+                <div>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" required pattern="">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="rpassword">Repeat password</label>
+                    <input id="rpassword" name="rpassword" type="password" required pattern="">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+            </fieldset>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </div>
     
 </body>
 </html>
